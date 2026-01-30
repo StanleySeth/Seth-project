@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <script src="dist/js/bootstrap.js"></script>
+</head>
+<body>
+        <!-- Section one starts here -->
+     <section class="row">
+        <div class="col-lg-12">
+            <!--below tag element will hold all the contents of the navbar  -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-info">
+                <a href="Index.html" class="navbar-brand"><b>Life In Layers</b></a>
+                <!-- below is the toggler/hamburger button to either collapse/expand contents depending on the different screen sizes. -->
+                 <button class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbarcontents">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                 <div id="navbarcontents" class="navbar-collapse collapse">
+                    <div class="navbar-nav text-center text-white">
+                        <a href="Index.html" class="nav-link">Home</a>
+                        <a href="About Us.html" class="nav-link">About Us</a>
+                        <a href="Feedback.html" class="nav-link">Feedback</a>
+                    </div>
+                 </div>
+            </nav>
+        </div>
+     </section>
+    <!-- Section one ends here -->
+     <!-- 1️. 2nd Section -->
+  <section class="hero bg-light text-center py-5">
+    <div class="container bg-warning">
+      <h1 class="display-4">Life in Layers</h1>
+      <p class="">Explore your thoughts, one layer at a time.</p>
+      <button class="btn btn-primary btn-lg" id="startBtn">Begin Reflection</button>
+    </div>
+  </section>
+  <!-- 2️. How It Works -->
+  <section class="how-it-works py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">How It Works</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card p-3 mb-3">
+            <h5>Step 1</h5>
+            <p>Read the daily prompt.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 mb-3">
+            <h5>Step 2</h5>
+            <p>Write your reflection.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 mb-3">
+            <h5>Step 3</h5>
+            <p>See patterns and track your emotions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 3️. Daily Prompt -->
+  <section class="daily-prompt py-5 bg-light text-center">
+    <div class="container">
+      <h2>Daily Prompt</h2>
+      <p id="promptText">Loading today's reflection...</p>
+    </div>
+  </section>
+  <!-- 4️. Thought Input -->
+  <section class="row py-5">
+    <div class="container text-center">
+      <h2>Write Your Reflection</h2>
+      <textarea id="userThought" class="form-control my-3" rows="4" placeholder="Share your thoughts..."></textarea>
+      <a href="Final.html"><button class="btn btn-success" id="submitThought">Submit</button></a>
+    </div>
+  </section>
+  <!-- 5️. Emotion Selector -->
+  <section class="emotion-selector py-5 bg-light">
+    <div class="container text-center">
+      <h2>Select Your Emotion</h2>
+      <div class="btn-group mt-3" role="group" id="emotionButtons">
+        <button type="button" class="btn btn-outline-primary">Calm</button>
+        <button type="button" class="btn btn-outline-primary">Hopeful</button>
+        <button type="button" class="btn btn-outline-primary">Tense</button>
+        <button type="button" class="btn btn-outline-primary">Reflective</button>
+      </div>
+    </div>
+  </section>
+  <!-- 6️. Reflection Summary -->
+  <section class="reflection-summary py-5">
+    <div class="container text-center">
+      <h2>Your Reflection Summary</h2>
+      <div class="card p-3 mt-3" >
+        <p>No reflection yet.</p>
+        <span class="badge bg-secondary">Emotion</span>
+      </div>
+    </div>
+  </section>
+   <!-- 7️. Pattern Viewer -->
+  <section class="pattern-viewer py-5 bg-light">
+    <div class="container text-center">
+      <h2>Your Emotional Patterns</h2>
+      <ul class="list-group" id="patternList">
+        <li class="list-group-item">Most selected emotion: None</li>
+      </ul>
+    </div>
+  </section>
+  <!-- 8️. Reset / Restart -->
+  <section class="reset-section py-5">
+    <div class="container text-center">
+      <h2>Start Over</h2>
+      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#resetModal">Reset All</button>
+    </div>
+  </section>
+  <!-- Section nine starts here -->
+         <input style="background-color: rgb(41, 6, 66); width: 100%; height: 100px;">
+            <section class="row" style="background-color: rgb(6, 6, 62); color: white">
+                <div class="col-lg-4">
+                  <h2>Social Media</h2>
+                    <img src="Images/Facebook.png" alt="Facebook" height="40px" class="mx-1">
+                    <img src="images/IG.jpg" alt="IG" height="50px" class="mx-1">
+                    <img src="Images/Twitter.png" alt="Twitter" height="40px" class="mx-1">
+                </div>
+            
+                <div class="col-lg-4">
+                    <h2>Twitter</h2>
+                    <a href="https://x.com/ModcomKenya?ref_src=twsrc%5Etfw"class="text-white">Tweets by Life In Layers</a>
+                </div>
+                <div class="col-md-3">
+                    <h2>Contact Us</h2>
+                    <img src="images/Telephone logo.png" alt="Tel" height="40px">+254 712711144 <br><br>
+                    <img src="images/mail.png" alt="mail" height="40px">lifecompanion@gmail.co.ke <br><br>
+                    <img src="images/location.jpg" alt="maps" height="40px">Kasarani Estates, near Kasarani Police Station, Nairobi
+                </div>
+            </section>
+        <!-- Section nine ends here -->
+           <footer class="text-center text-white bg-warning p-2">
+            <b>Developed by Seth. &copy; 2026 All Rights Reserved</b>
+          </footer>
+
+
+</body>
+</html>
